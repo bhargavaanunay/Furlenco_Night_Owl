@@ -1,0 +1,10 @@
+<header class="header">
+	<div class="main-title">NightOwl</div>
+	<nav class="navbar">
+		<ul>
+			<li ng-show="!vm.user.username"><a href="" ng-click="vm.open()"><span>SignIn/SignUp</span></a></li>
+			<li ng-show="vm.user.username"><a href="">Hi, {{vm.user.username}}</a> </li>
+			<li ng-show="vm.user.username"><a href="" ng-click="vm.logout()"><span>Signout</span></a></li>
+		</ul>
+	</nav>
+</header>

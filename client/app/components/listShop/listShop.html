@@ -1,0 +1,52 @@
+<div class="list-shop">
+	<search-component input-text="vm.inputLocation" on-select-location="vm.onSelectLocation(location)"></search-component>
+	<div class="filters">
+		Filter By:
+		<div>
+			<ul>
+				<li ng-repeat="value in vm.tags">
+					<label class="checkbox-inline">
+				  		<input type="checkbox"
+				  		ng-model="vm.filters[value]"> {{value}}
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="map-block">
+		<div id="list-map" class="map ng-class:{ 'map-shrink': vm.isShopDetailVisible };"></div>
+		<div class="input-form ng-class:{ 'active': vm.isShopDetailVisible };" >
+			<div class="form-header">
+				<div class="btn btn-primary" ng-click="vm.isShopDetailVisible = false;">
+					&#8594;
+				</div>
+				<div class="title">Shop Details</div>
+			</div>
+			<form>
+				<div class="form-group">
+				    <label for="name">{{vm.highlightedShop.name}}</label>
+			  	</div>
+				<div class="form-group">
+				    <label for="tags">{{vm.highlightedShop.tag}}</label>
+				</div>
+				
+				<button class="btn btn-default">
+					{{vm.highlightedShop.upvote}}
+				</button>
+				<button type="button" class="btn btn-default" aria-label="Upvote" ng-click="vm.vote(true)">
+					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default" ng-click="vm.vote(false)" aria-label="Downvote">
+					<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+				</button>
+				<button class="btn btn-default">
+					{{vm.highlightedShop.downvote}}
+				</button>
+				<br>
+				<button class="btn btn-default" ng-click="vm.onClickOk()">
+					OK
+				</button>
+			</form>
+		</div>
+	</div>
+</div>

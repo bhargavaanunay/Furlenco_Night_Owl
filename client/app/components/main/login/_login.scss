@@ -1,0 +1,27 @@
+.modal-dialog .modal-sm{
+	
+}
+.login-header{
+	padding: 0 !important;
+	margin: 0;
+	h3{
+		font-size: 110%;
+		width: 49%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		text-transform: uppercase;
+		display: inline-block;
+		background-color: #bbb;
+		height: 30px;
+	}
+	h3:first-of-type{
+		width: 49%;
+	}
+	h3.active{
+		background-color: #ddd;
+	}
+}
+.signin-form{
+	
+}

@@ -1,0 +1,11 @@
+<header-component user="vm.user"></header-component>
+<div class="user-view">
+	<div class="tabs">
+		<ul>
+			<li ng-class="{ 'active': vm.viewShopTab }" ng-click="vm.viewShopTab = true">View Shops</li>
+			<li ng-class="{ 'active': !vm.viewShopTab }" ng-click="vm.viewShopTab = false">Mark Shop</li>
+		</ul>
+	</div>
+	<div ng-if="vm.viewShopTab" ng-include="'components/listShop/listShop.html'" ng-controller="ListShopController as vm"></div>
+	<div ng-if="!vm.viewShopTab" ng-include="'components/tagShop/tagShop.html'" ng-controller="TagShopController as vm"></div>
+</div>

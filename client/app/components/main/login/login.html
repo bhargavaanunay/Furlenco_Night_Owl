@@ -1,0 +1,29 @@
+<div class="modal-header login-header">
+    <h3 class="modal-title ng-class:{ 'active': vm.isSignInPage };" ng-click="vm.isSignInPage = true">SignIn</h3>
+    <h3 class="modal-title ng-class:{ 'active': !vm.isSignInPage };" ng-click="vm.isSignInPage = false">SingUp</h3>
+</div>
+<div class="modal-body">
+    <div class="signin-form ng-class:{ 'active': vm.isSignInPage };" ng-show="vm.isSignInPage">
+        <form>
+    	<label for="username">Username</label>
+    	<input type="text" id="username" ng-model="vm.user.username"/>
+
+    	<label for="password">Password</label>
+    	<input type="password" id="password" ng-model="vm.user.password"/>
+
+    	<button class="btn btn-primary" ng-click="vm.onClickLogin(vm.user)">SignIn</button>
+        </form>
+    </div>
+    <div class="signin-form ng-class:{ 'active': vm.isSignInPage };" ng-show="!vm.isSignInPage">
+        <form>
+    	<label for="username">Username</label>
+    	<input type="text" id="username" ng-model="vm.newUser.username"/>
+
+    	<label for="password">Password</label>
+    	<input type="password" id="password" ng-model="vm.newUser.password"/>
+
+    	<button class="btn btn-primary" ng-click="vm.onClickSignUp(vm.newUser)">SignUp</button>
+        </form>
+    </div>
+    
+</div>

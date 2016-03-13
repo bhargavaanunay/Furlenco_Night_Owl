@@ -1,0 +1,314 @@
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer; }
+
+/* Component SCSS */
+.main-content {
+  padding: 50px 0 0 0px;
+  margin: 0;
+  text-align: center; }
+  .main-content .owl-shops {
+    position: relative;
+    padding: 50px 0;
+    min-height: 510px;
+    margin: 0;
+    background-color: #eee; }
+  .main-content .primary-heading {
+    font-size: 200%;
+    color: #666; }
+  .main-content .secondary-heading {
+    font-size: 120%;
+    color: #888; }
+  .main-content .image-block {
+    min-height: 410px; }
+  .main-content .image-each {
+    display: inline-block; }
+
+.header {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 15px 10px;
+  background-color: #555;
+  color: #eee;
+  z-index: 5; }
+  .header .main-title {
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    font-size: 130%; }
+  .header nav {
+    float: right;
+    display: inline-block;
+    height: auto;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 110%; }
+  .header ul {
+    display: inline-block; }
+  .header li {
+    display: inline-block;
+    padding: 0 5px; }
+  .header li a {
+    color: #eee; }
+  .header li a:hover {
+    text-decoration: none;
+    color: #bbb; }
+
+.footer {
+  padding: 20px;
+  width: 100%;
+  margin: 0;
+  background-color: #666;
+  color: #fff;
+  height: 80px;
+  overflow: hidden; }
+  .footer .social-media {
+    float: left;
+    width: 50%; }
+  .footer .social-media div {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+    height: 25px;
+    width: 25px; }
+  .footer img {
+    border-radius: 100%; }
+  .footer .copyright-text {
+    float: right;
+    width: 50%; }
+
+.search-component {
+  width: 100%;
+  background-color: #eee;
+  height: 70px;
+  box-shadow: 0px 2px 5px 0px #ccc; }
+  .search-component input {
+    margin: 15px 0;
+    height: 40px;
+    width: 75%;
+    max-width: 400px;
+    padding: 10px; }
+  .search-component input:focus {
+    outline-color: #aaa; }
+
+.login-header {
+  padding: 0 !important;
+  margin: 0; }
+  .login-header h3 {
+    font-size: 110%;
+    width: 49%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #bbb;
+    height: 30px; }
+  .login-header h3:first-of-type {
+    width: 49%; }
+  .login-header h3.active {
+    background-color: #ddd; }
+
+.user-view {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .user-view .tabs ul {
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .user-view .tabs li {
+    display: inline-block;
+    width: 50%;
+    padding: 5px 0;
+    font-size: 100%;
+    background-color: #eee;
+    box-shadow: 0px 3px 5px -1px #ccc; }
+  .user-view .tabs li.active {
+    background-color: #ddd; }
+
+.tag-shop {
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 5px; }
+  .tag-shop .map {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 900px; }
+  .tag-shop .map-shrink {
+    width: 66%;
+    margin: 0; }
+  .tag-shop .input-form {
+    position: absolute;
+    background-color: #aaa;
+    top: 5px;
+    bottom: 0;
+    right: 0;
+    left: 66%;
+    height: 100%;
+    width: 0;
+    display: none;
+    -webkit-transition: width 0.8s linear;
+    /* Safari */
+    transition: width 0.8s linear; }
+  .tag-shop .active {
+    width: 34%;
+    display: block;
+    -webkit-transition: width 0.8s ease-in;
+    /* Safari */
+    transition: width 0.8s ease-in; }
+  .tag-shop .form-header {
+    height: 40px;
+    background-color: #999;
+    padding: 0;
+    margin: 0; }
+    .tag-shop .form-header .title {
+      text-align: center;
+      font-size: 112%;
+      display: inline-block;
+      padding-top: 10px;
+      color: #eee; }
+    .tag-shop .form-header div.btn {
+      float: left;
+      background-color: #666;
+      font-size: 110%;
+      height: 100%;
+      width: 40px;
+      border-radius: 0; }
+  .tag-shop form div:first-of-type {
+    margin-top: 15px; }
+  .tag-shop form input, .tag-shop form select, .tag-shop form options {
+    background-color: #eee; }
+  .tag-shop form button {
+    outline: none;
+    background-color: #ccc; }
+  .tag-shop form button:last-of-type {
+    margin-top: 15px;
+    background-color: #eee; }
+  .tag-shop form button.selected {
+    background-color: #eee; }
+
+.list-shop {
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.filters div, .filters ul, .filters li {
+  display: inline-block; }
+.filters ul {
+  margin-top: 5px;
+  padding-left: 0; }
+.filters li {
+  background-color: #eee;
+  margin-left: 10px;
+  padding: 2px 5px;
+  box-shadow: 0px 2px 5px 0px #ccc; }
+
+.map-block {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  text-align: center;
+  padding: 5px; }
+  .map-block .map {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 900px;
+    display: inline-block; }
+  .map-block .map-shrink {
+    width: 66%;
+    margin: 0; }
+  .map-block .input-form {
+    float: right;
+    background-color: #aaa;
+    left: 66%;
+    height: 100%;
+    width: 0;
+    display: none;
+    -webkit-transition: width 0.8s linear;
+    /* Safari */
+    transition: width 0.8s linear; }
+  .map-block .active {
+    width: 34%;
+    display: block;
+    -webkit-transition: width 0.8s ease-in;
+    /* Safari */
+    transition: width 0.8s ease-in; }
+  .map-block .form-header {
+    height: 40px;
+    background-color: #999;
+    padding: 0;
+    margin: 0; }
+    .map-block .form-header .title {
+      text-align: center;
+      font-size: 112%;
+      display: inline-block;
+      padding-top: 10px;
+      color: #eee; }
+    .map-block .form-header div.btn {
+      float: left;
+      background-color: #666;
+      font-size: 110%;
+      height: 100%;
+      width: 40px;
+      border-radius: 0; }
+  .map-block form div:first-of-type {
+    margin-top: 15px; }
+  .map-block form input, .map-block form select, .map-block form options {
+    background-color: #eee; }
+  .map-block form button {
+    outline: none;
+    background-color: #ccc; }
+  .map-block form button:last-of-type {
+    margin-top: 15px;
+    background-color: #eee; }
+  .map-block form button.selected {
+    background-color: #eee; }
+
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+body, div, p, input {
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif; }
+
+input {
+  box-sizing: border-box; }
+
+/* Add Component SCSS Above */
+/* Personal preference for BS modal.  The SCSS below makes the backdrop white and
+   causes the modal to fade in rather than slide in. */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1.5;
+  background-color: rgba(105, 105, 105, 0.2); }
+
+/*# sourceMappingURL=app.css.map */

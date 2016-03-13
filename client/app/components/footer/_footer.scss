@@ -1,0 +1,27 @@
+.footer{
+	padding: 20px;
+	width: 100%;
+	margin: 0;
+	background-color: #666;
+	color: #fff;
+	height: 80px;
+	overflow: hidden;
+	.social-media{
+		float: left;
+		width: 50%;
+	}
+	.social-media div{
+		display: inline-block;
+		margin: 0 10px;
+		padding: 0;
+		height: 25px;
+		width: 25px;
+	}
+	img{
+		border-radius: 100%;
+	}
+	.copyright-text{
+		float: right;
+		width: 50%;
+	}
+}

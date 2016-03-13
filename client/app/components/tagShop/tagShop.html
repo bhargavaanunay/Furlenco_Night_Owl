@@ -1,0 +1,34 @@
+<div class="tag-shop">
+	<div id="list-map" class="map ng-class:{ 'map-shrink': vm.isInputFormVisible };"></div>
+	<div class="input-form ng-class:{ 'active': vm.isInputFormVisible };" >
+		<div class="form-header">
+			<div class="btn btn-primary" ng-click="vm.isInputFormVisible = false;">
+				&#8594;
+			</div>
+			<div class="title">Shop Details</div>
+		</div>
+		<form>
+			<div class="form-group">
+			    <label for="name">Shop Name</label>
+			    <input type="text" class="form-control" id="name" ng-model="vm.shop.name">
+		  	</div>
+			<div class="form-group">
+			    <label for="tags">Tags</label>
+			    <select class="form-control" ng-model="vm.shop.tag" id="tags">
+					<option ng-value="value" ng-repeat="value in vm.tags">{{value}}</option>
+				</select>
+			</div>
+
+			<button type="button" class="btn btn-default ng-class:{ 'selected': vm.shop.upvote };" aria-label="Upvote"  ng-click="vm.shop.upvote = true">
+				<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+			</button>
+			<button type="button" class="btn btn-default  ng-class:{ 'selected': !vm.shop.upvote };" aria-label="Downvote" ng-click="vm.shop.upvote = false">
+				<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+			</button>
+			<br>
+			<button class="btn btn-default" ng-click="vm.onClickDone()">
+				Done
+			</button>
+		</form>
+	</div>
+</div>

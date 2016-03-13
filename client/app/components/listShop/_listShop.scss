@@ -1,0 +1,99 @@
+.list-shop{
+	position: absolute;
+	top: 34px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.filters{
+	div, ul, li{
+		display: inline-block;
+	}
+	ul{
+		margin-top: 5px;
+		padding-left: 0;
+	}
+	li{
+		background-color: #eee;
+		margin-left: 10px;
+		padding: 2px 5px;
+	    box-shadow: 0px 2px 5px 0px #ccc;
+	}
+}
+.map-block{
+	position: absolute;
+	top: 100px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    display: inline-block;
+	text-align: center;
+	padding: 5px;
+	.map{
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		max-width: 900px;
+    	display: inline-block;
+	}
+	.map-shrink{
+		width: 66%;
+		margin: 0;
+	}
+    .input-form{
+		float: right;
+		background-color: #aaa;
+		left: 66%;
+		height: 100%;
+		width: 0;
+		display: none;
+		-webkit-transition: width 0.8s linear; /* Safari */
+    	transition: width 0.8s linear;
+    }
+    .active{
+    	width: 34%;
+    	display: block;
+		-webkit-transition: width 0.8s ease-in; /* Safari */
+    	transition: width 0.8s ease-in;
+    }
+    .form-header{
+    	height: 40px;
+	    background-color: #999;
+	    padding: 0;
+	    margin: 0;
+    	.title{
+    		text-align: center;
+    		font-size: 112%;
+		    display: inline-block;
+		    padding-top: 10px;
+		    color: #eee;
+    	}
+		div.btn{
+			float: left;
+			background-color: #666;
+			font-size: 110%;
+			height: 100%;
+			width: 40px;
+    		border-radius: 0;
+		}
+    }
+    form{
+    	div:first-of-type{
+    		margin-top: 15px;
+    	}
+    	input, select, options{
+    		background-color: #eee;
+    	}
+    	button{
+    		outline: none;
+    		background-color: #ccc;
+    	}
+    	button:last-of-type{
+    		margin-top: 15px;
+    		background-color: #eee;
+    	}
+    	button.selected{
+    		background-color: #eee;
+    	}
+    }
+}

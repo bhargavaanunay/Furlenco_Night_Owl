@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="NightOwl">
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  
+  <title>NightOwl</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/app.css -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Niconne|Open+Sans:400,300,700,700italic,400italic|Lato:400,300,700,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="tmp/app.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- endbuild -->
+
+</head>
+<body>
+  
+  <div ui-view></div>
+  
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0C0xNW86fZsjowp9rAb__y-nJ_IYq3Ho&signed_in=true&libraries=places">
+    </script>
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="vendor/jquery/dist/jquery.js"></script>
+  <script src="vendor/underscore/underscore.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="vendor/angular-animate/angular-animate.js"></script>
+  <script src="vendor/angular-resource/angular-resource.js"></script>
+  <script src="vendor/angular-cookies/angular-cookies.js"></script>
+  <script src="vendor/angular-mocks/angular-mocks.js"></script>
+  <script src="vendor/angular-ui-utils/ui-utils.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="vendor/moment/moment.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+
+ <!-- build:js scripts/app.js -->
+ <!-- Main App JS -->
+ <script src="app.js"></script>
+ <script src="components/main/main.controller.js"></script>
+ <script src="components/header/header.directive.js"></script>
+ <script src="components/header/header.controller.js"></script>
+ <script src="components/footer/footer.controller.js"></script>
+ <script src="components/footer/footer.directive.js"></script>
+ <script src="components/search/search.controller.js"></script>
+ <script src="components/search/search.directive.js"></script>
+ <script src="components/main/login/login.controller.js" defer></script>
+ <script src="components/userView/userView.controller.js"></script>
+ <script src="components/listShop/listShop.controller.js"></script>
+ <script src="components/tagShop/tagShop.controller.js"></script>
+ 
+
+ <!--
+ services
+-->
+  <script src="services/authentication.service.js"></script>
+  <script src="services/shop.service.js"></script>
+ <!-- Add New Component JS Above -->       
+        
+ <!-- endbuild -->
+
+
+  
+
+</body>
+</html>
