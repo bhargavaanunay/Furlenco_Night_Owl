@@ -1,0 +1,48 @@
+create table user(
+    username varchar(20),
+    password varchar(20)
+);
+
+create table shop(
+    shop_id int not null auto_increment,
+    name varchar(40),
+    latitude decimal(30,18),
+    longitude decimal(30,18),
+    primary key(shop_id)
+);
+
+create table tags(
+    tag_id int not null auto_increment,
+    name varchar(30),
+    primary key (tag_id)
+);
+
+create table tag_shop_map(
+    tag_id int,
+    shop_id int
+);
+
+create table shop_ratings(
+    shop_id int,
+    thumbsup int,
+    thumbsdown int
+);
+
+create table shop_reviews(
+    shop_id int,
+    review varchar(255),
+    reviewup int,
+    reviewdw int,
+    username varchar(20),
+    primary key(review_id)
+);
+
+
+create table rating_audit(
+    rating_id int not null auto_increment,
+    shop_id int,
+    thumbsup int,
+    thumbsdw int,
+    username varchar(20),
+    primary key(rating_id)
+);
